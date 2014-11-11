@@ -12,7 +12,7 @@ function square(x) {
 var numbersSquared = [];
 
 for (var i = 0; i < numbers.length; i++) {
-  numbersSquared.push(numbers[i] * numbers[i]);
+  numbersSquared.push(square(numbers[i]));
 }
 
 //////////////////////////////////////////////
