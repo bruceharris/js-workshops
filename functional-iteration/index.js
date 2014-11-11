@@ -7,18 +7,28 @@ function square(x) {
 }
 
 
-// re-implement the below using numbers.map(...)
+var numbersSquared = numbers.map(square);
 
-var numbersSquared = [];
+function isEven(x) {
+  return x % 2 === 0;
+}
+
+// re-implement the below using numbers.filter(...)
+
+var evenNumbers = [];
 
 for (var i = 0; i < numbers.length; i++) {
-  numbersSquared.push(square(numbers[i]));
+  if (isEven(numbers[i])) {
+    evenNumbers.push(numbers[i]);
+  }
 }
+
 
 //////////////////////////////////////////////
 
 module.exports = {
   numbers: numbers,
   numbersSquared: numbersSquared,
+  evenNumbers: evenNumbers,
   square: square
 };
