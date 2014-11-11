@@ -1,0 +1,15 @@
+{
+  "name": "functional-iteration",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.0.1"
+  }
+}
