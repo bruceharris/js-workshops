@@ -16,6 +16,6 @@ The tests (in `test.js`) will pass initially - your task is to modify the code t
 
 To run the tests, `npm test`
 
-To proceed to step 2, `$git checkout s2` etc...
+To proceed to step 2, `git checkout s2` etc...
 
 Step 6 is the final exercise step, and step 7 demonstrates a solution to the problem posed in step 6.
