@@ -33,17 +33,18 @@ var tradeVolume = [
   { symbol: 'FB',   shares: 227 },
 ];
 
-// re-implement the following using .reduce()
+// solution
 
-var aggregateTradeVolumeBySymbol = {};
-
-for (var i = 0; i < tradeVolume.length; i++) {
-  var symbol = tradeVolume[i].symbol;
-  if (! (symbol in aggregateTradeVolumeBySymbol)) {
-    aggregateTradeVolumeBySymbol[symbol] = 0;
+function sumBySymbol(prev, curr) {
+  var symbol = curr.symbol;
+  if (! (symbol in prev)) {
+    prev[symbol] = 0;
   }
-  aggregateTradeVolumeBySymbol[symbol] += tradeVolume[i].shares;
+  prev[symbol] += curr.shares;
+  return prev;
 }
+
+var aggregateTradeVolumeBySymbol = tradeVolume.reduce(sumBySymbol, {});
 
 //////////////////////////////////////////////
 
