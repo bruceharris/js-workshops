@@ -8,6 +8,7 @@ var numbers = index.numbers;
 var square = index.square;
 var evenNumbers = index.evenNumbers;
 var evenNumbersSquared = index.evenNumbersSquared;
+var total = index.total;
 
 describe('squaring numbers in an array', function() {
   it('should contain expected values', function() {
@@ -30,3 +31,10 @@ describe('filtering and squaring numbers in an array', function() {
     expect(evenNumbersSquared[0]).to.equal(16);
   });
 });
+
+describe('aggregating numbers in an array - total', function() {
+  it('should contain the sum of the numbers in the original array', function() {
+    expect(total).to.equal(16);
+  });
+});
+

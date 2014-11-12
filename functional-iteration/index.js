@@ -15,14 +15,18 @@ function isEven(x) {
 
 var evenNumbers = numbers.filter(isEven);
 
-// re-implement the below in a purely functional style
+var evenNumbersSquared = numbers.filter(isEven).map(square);
 
-var evenNumbersSquared = [];
+function sum(a, b) {
+  return a + b;
+}
+
+// re-implement the below using numbers.forEach(...)
+
+var total = 0;
 
 for (var i = 0; i < numbers.length; i++) {
-  if (isEven(numbers[i])) {
-    evenNumbersSquared.push(square(numbers[i]));
-  }
+  total = sum(total, numbers[i]);
 }
 
 //////////////////////////////////////////////
@@ -32,5 +36,6 @@ module.exports = {
   numbersSquared: numbersSquared,
   evenNumbers: evenNumbers,
   evenNumbersSquared: evenNumbersSquared,
+  total: total,
   square: square
 };
