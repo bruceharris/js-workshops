@@ -7,6 +7,7 @@ var numbersSquared = index.numbersSquared;
 var numbers = index.numbers;
 var square = index.square;
 var evenNumbers = index.evenNumbers;
+var evenNumbersSquared = index.evenNumbersSquared;
 
 describe('squaring numbers in an array', function() {
   it('should contain expected values', function() {
@@ -20,5 +21,12 @@ describe('filtering an array', function() {
   it('should contain the even numbers in the original array', function() {
     expect(evenNumbers.length).to.equal(1);
     expect(evenNumbers[0]).to.equal(4);
+  });
+});
+
+describe('filtering and squaring numbers in an array', function() {
+  it('should contain the squares of the even numbers in the original array', function() {
+    expect(evenNumbersSquared.length).to.equal(1);
+    expect(evenNumbersSquared[0]).to.equal(16);
   });
 });

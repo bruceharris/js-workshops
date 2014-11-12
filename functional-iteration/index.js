@@ -13,16 +13,17 @@ function isEven(x) {
   return x % 2 === 0;
 }
 
-// re-implement the below using numbers.filter(...)
+var evenNumbers = numbers.filter(isEven);
 
-var evenNumbers = [];
+// re-implement the below in a purely functional style
+
+var evenNumbersSquared = [];
 
 for (var i = 0; i < numbers.length; i++) {
   if (isEven(numbers[i])) {
-    evenNumbers.push(numbers[i]);
+    evenNumbersSquared.push(square(numbers[i]));
   }
 }
-
 
 //////////////////////////////////////////////
 
@@ -30,5 +31,6 @@ module.exports = {
   numbers: numbers,
   numbersSquared: numbersSquared,
   evenNumbers: evenNumbers,
+  evenNumbersSquared: evenNumbersSquared,
   square: square
 };
