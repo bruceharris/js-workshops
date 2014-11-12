@@ -9,6 +9,7 @@ var square = index.square;
 var evenNumbers = index.evenNumbers;
 var evenNumbersSquared = index.evenNumbersSquared;
 var total = index.total;
+var aggregateTradeVolumeBySymbol = index.aggregateTradeVolumeBySymbol;
 
 describe('squaring numbers in an array', function() {
   it('should contain expected values', function() {
@@ -38,3 +39,17 @@ describe('aggregating numbers in an array - total', function() {
   });
 });
 
+describe('aggregating to dictionary', function() {
+  it('should contain the correct number of keys (entries)', function() {
+    expect(Object.keys(aggregateTradeVolumeBySymbol).length).to.equal(3);
+  });
+  it('should contain the correct total for GOOG', function() {
+    expect(aggregateTradeVolumeBySymbol.GOOG).to.equal(2166);
+  });
+  it('should contain the correct total for FB', function() {
+    expect(aggregateTradeVolumeBySymbol.FB).to.equal(589);
+  });
+  it('should contain the correct total for TWTR', function() {
+    expect(aggregateTradeVolumeBySymbol.TWTR).to.equal(1713);
+  });
+});
