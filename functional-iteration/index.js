@@ -33,7 +33,7 @@ var tradeVolume = [
   { symbol: 'FB',   shares: 227 },
 ];
 
-// re-implement the following using .map() and .reduce()
+// re-implement the following using .reduce()
 
 var aggregateTradeVolumeBySymbol = {};
 
