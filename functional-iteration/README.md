@@ -35,3 +35,9 @@ In it's current state, the solutions have been implemented, so refrain from look
 12. Repeat the above through step 7 (s7)
 
 Step 6 is the final exercise step, and step 7 demonstrates a solution to the problem posed in step 6.
+
+## Reference documentation
+
+See the [docs](https://github.com/bruceharris/js-workshops/tree/master/functional-iteration/docs) folder for simplified summaries of the functions we are using.
+
+See [Mozilla Developer Network's](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) JavaScript Reference Documentation for full documentation of these functions.
