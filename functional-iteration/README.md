@@ -25,15 +25,13 @@ In it's current state, the solutions have been implemented, so refrain from look
 2. Clone this repo: `git clone https://github.com/bruceharris/js-workshops.git`
 3. `cd functional-iteration`
 4. `npm i` (short for `npm install`) to download dependencies
-
-To rewind to step 1, `git checkout s1`
-
-See `index.js`, where you will have a task to complete.
-
-The tests (in `test.js`) will pass initially - your task is to modify the code to use a functional style, without breaking the tests.
-
-To run the tests, `npm test`
-
-To proceed to step 2, `git checkout s2` etc...
+5. To rewind to exercise #1 (step 1), `git checkout s1`
+6. Open `index.js` in a text editor, where you will have a task to complete.
+7. On the commmand line, `npm test` to run the tests (in `test.js`), you should see 1 test passing
+8. Your task is to modify the code to use a functional style, without breaking the tests.
+9. After modifying your code, run the tests to ensure they are still passing.
+10. After successfully completing exercise 1, `git stash` to save the current state of your work
+11. `git checkout s2` to proceed to step 2
+12. Repeat the above through step 7 (s7)
 
 Step 6 is the final exercise step, and step 7 demonstrates a solution to the problem posed in step 6.
